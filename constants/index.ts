@@ -20,165 +20,157 @@ import {
 } from "react-icons/si";
 
 export const navLinks = [
-  { name: "home", path: "/" },
-  { name: "services", path: "/services" },
-  { name: "resume", path: "/resume" },
-  { name: "work", path: "/work" },
-  { name: "contact", path: "/contact" },
+  { nameKey: "home", path: "/" },
+  { nameKey: "services", path: "/services" },
+  { nameKey: "resume", path: "/resume" },
+  { nameKey: "work", path: "/work" },
+  { nameKey: "contact", path: "/contact" },
 ];
 
 export const stats = [
   {
     num: 12,
-    text: "Years of experience",
+    textKey: "yearsOfExperience",
   },
   {
     num: 26,
-    text: "Projects completed",
+    textKey: "projectsCompleted",
   },
   {
     num: 8,
-    text: "Technologies mastered",
+    textKey: "technologiesMastered",
   },
   {
     num: 500,
-    text: "Code commits",
+    textKey: "codeCommits",
   },
 ];
 
 export const services = [
   {
     num: "01",
-    title: "Frontend Development",
-    description:
-      "I can build a beautiful and scalable SPA using React.js, Next.js, and other modern frameworks.",
+    titleKey: "frontend.title",
+    descriptionKey: "frontend.description",
     href: "",
   },
   {
     num: "02",
-    title: "Backend Development",
-    description:
-      "I can develop robust backend applications using Java, Node.js and other popular technologies.",
+    titleKey: "backend.title",
+    descriptionKey: "backend.description",
     href: "",
   },
   {
     num: "03",
-    title: "WordPress Development",
-    description:
-      "I can create custom WordPress websites to help you develop a strong online presence.",
+    titleKey: "wordpress.title",
+    descriptionKey: "wordpress.description",
     href: "",
   },
   {
     num: "04",
-    title: "SEO & Analytics",
-    description:
-      "Rank higher on popular search engines like Google through SEO and analyze using Google Analytics.",
+    titleKey: "seo.title",
+    descriptionKey: "seo.description",
     href: "",
   },
 ];
 
 export const about = {
-  title: "About Me",
-  description:
-    "I am a Junior full stack developer specializing in frontend and backend development. I have more than 02 years of experience in building web applications.",
+  title: "title",
+  description: "description",
   info: [
     {
-      fieldName: "Name",
-      fieldValue: "Steve Kazock",
+      fieldName: "name",
+      fieldValue: "nameVal",
     },
     {
-      fieldName: "Phone",
-      fieldValue: "(+49) 176 732 563 73",
+      fieldName: "phone",
+      fieldValue: "phoneVal",
     },
     {
-      fieldName: "Experience",
-      fieldValue: "2+ years",
+      fieldName: "experience",
+      fieldValue: "years",
     },
     {
-      fieldName: "LinkedIn",
-      fieldValue: "steve-Kazock",
+      fieldName: "linkedin",
+      fieldValue: "linkedinVal",
     },
     {
-      fieldName: "Nationality",
-      fieldValue: "Cameroonian",
+      fieldName: "nationality",
+      fieldValue: "nationalityVal",
     },
     {
-      fieldName: "Email",
-      fieldValue: "kazockparfait02@gmail.com",
+      fieldName: "email",
+      fieldValue: "emailVal",
     },
     {
-      fieldName: "Address",
-      fieldValue: "Bremen, Germany",
+      fieldName: "address",
+      fieldValue: "addressVal",
     },
     {
-      fieldName: "Languages",
-      fieldValue: "French, English, German",
+      fieldName: "languages",
+      fieldValue: "languagesVal",
     },
   ],
 };
 
 export const experience = {
   icon: "/assets/resume/badge.svg",
-  title: "My Experience",
-  description:
-    "I have worked with both small and large teams on various projects with various technologies. Always looking for opportunities to learn and grow.",
+  titleKey: "title",
+  descriptionKey: "description",
   items: [
     {
       company: "CEWE Stiftung & Co. KGaA",
-      position: "Java Developer Working Student",
-      duration: "2024 - Present",
+      position: "cewe.position",
+      duration: "cewe.duration",
     },
     {
       company: "IPowerworld",
-      position: "Full Stack Developer",
-      duration: "2023 - 2024",
+      position: "ipw.position",
+      duration: "ipw.duration",
     },
     {
       company: "Camencorp ",
-      position: "Full Stack Developer Intern",
-      duration: "Summer 2022",
+      position: "camc.position",
+      duration: "camc.duration",
     },
     {
       company: "Bildungsinstitut Kamerun",
-      position: "Freelance Web Developer",
-      duration: "2022 - 2023",
+      position: "bilinst.position",
+      duration: "bilinst.duration",
     },
   ],
 };
 
 export const education = {
   icon: "/assets/resume/cap.svg",
-  title: "My Education",
-  description:
-    "I'm completing my Bachelor's degree in Computer Science and Engineering from the University of Bremen, Germany.",
+  titleKey: "title",
+  descriptionKey: "description",
   items: [
     {
       institution: "University of Bremen",
-      degree: "Bachelor of Science",
+      degree: "uniBremen.degree",
       duration: "2024 - 2027",
     },
     {
       institution: "IME Douala",
-      degree: "Engineering Diploma in Computer Science - Not Completed",
+      degree: "ime.degree",
       duration: "2020 - 2023",
     },
     {
       institution: "FreeCodeCamp",
-      degree: "Certification in Responsive Web Design",
+      degree: "fcc01.degree",
       duration: "2022",
     },
     {
       institution: "FreeCodeCamp",
-      degree: "Certification in JavaScript Algorithms and Data Structures",
+      degree: "fcc02.degree",
       duration: "2022",
     },
   ],
 };
 
 export const skills = {
-  title: "My Skills",
-  description:
-    "I have worked with a range of technologies in the web development world. From frontend to backend, I can bring your ideas to life.",
+  titleKey: "title",
+  descriptionKey: "description",
   skillList: [
     {
       icon: FaHtml5,
@@ -234,35 +226,51 @@ export const skills = {
 export const projects = [
   {
     num: "01",
-    category: "Frontend",
+    category: "Fullstack",
     title: "Project 1",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum omnis tenetur, cumque pariatur saepe repellat.",
-    stack: [{ name: "HTML" }, { name: "CSS" }, { name: "JavaScript" }],
-    image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
+    description: "project1",
+    stack: [
+      { name: "Next.js" },
+      { name: "Tailwind.css" },
+      { name: "TypeScript" },
+      { name: "Appwrite" },
+    ],
+    image: "/assets/work/dashboard.png",
+    live: "https://banking-app-three-xi.vercel.app/",
+    github: "https://github.com/kozdailyy/banking-app",
   },
   {
     num: "02",
-    category: "Fullstack",
+    category: "Frontend",
     title: "Project 2",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum omnis tenetur, cumque pariatur saepe repellat.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Node.js" }],
+    description: "project2",
+    stack: [
+      { name: "React.js" },
+      { name: "MaterialUI" },
+      { name: "Youtube APIs" },
+    ],
     image: "/assets/work/thumb2.png",
-    live: "",
+    live: "https://kozdailytube.camencorp.com/",
     github: "",
   },
   {
     num: "03",
     category: "Frontend",
     title: "Project 3",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum omnis tenetur, cumque pariatur saepe repellat.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }],
+    description: "project3",
+    stack: [{ name: "HTML" }, { name: "CSS" }, { name: "JavaScript" }],
     image: "/assets/work/thumb3.png",
-    live: "",
+    live: "https://kdschool.netlify.app/",
+    github: "https://github.com/kozdailyy/Multipage-Educational-Website",
+  },
+  {
+    num: "04",
+    category: "Wordpress",
+    title: "Project 4",
+    description: "project4",
+    stack: [{ name: "Wordpress" }, { name: "Elementor" }, { name: "TutorLMS" }],
+    image: "/assets/work/thumb4.png",
+    live: "https://xpertacademy.site/",
     github: "",
   },
 ];

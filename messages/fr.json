@@ -1,0 +1,127 @@
+{
+  "Home": {
+    "role": "Développeur Logiciel",
+    "hello": "Hey, je suis",
+    "description": "Je suis excellent dans la création des applications et des sites web et suis compétent dans divers langages de programmation et technologies.",
+    "cv": "Télécharger CV"
+  },
+  "stats": {
+    "yearsOfExperience": "Années d'expérience",
+    "projectsCompleted": "Projets réalisés",
+    "technologiesMastered": "Technologies maîtrisées",
+    "codeCommits": "Commits de code"
+  },
+  "services": {
+    "frontend": {
+      "title": "Développement Frontend",
+      "description": "Je peux créer une SPA belle et évolutive en utilisant React.js, Next.js et d'autres frameworks modernes."
+    },
+    "backend": {
+      "title": "Développement Backend",
+      "description": "Je peux développer des applications backend robustes avec Java, Node.js et d'autres technologies populaires."
+    },
+    "wordpress": {
+      "title": "Développement WordPress",
+      "description": "Je peux créer des sites WordPress personnalisés pour renforcer votre présence en ligne."
+    },
+    "seo": {
+      "title": "SEO & Analytics",
+      "description": "Améliorez votre positionnement sur des moteurs comme Google grâce au SEO et analysez avec Google Analytics."
+    }
+  },
+  "nav": {
+    "home": "accueil",
+    "services": "services",
+    "resume": "parcours",
+    "work": "réalisations",
+    "contact": "contact"
+  },
+  "resume": {
+    "experience": "Experience",
+    "education": "Education",
+    "skills": "Compétences",
+    "about": "À propos de moi"
+  },
+  "experience": {
+    "title": "Mon Expérience",
+    "description": "J'ai travaillé avec des petites et grandes équipes sur divers projets avec diverses technologies. Toujours à la recherche d'opportunités pour apprendre et grandir.",
+    "cewe": {
+      "position": "Développeur Java Alternant",
+      "duration": "2024 - Présent"
+    },
+    "ipw": {
+      "position": "Développeur Full Stack",
+      "duration": "2023 - 2024"
+    },
+    "camc": {
+      "position": "Stagiaire Développeur Full Stack",
+      "duration": "Été 2022"
+    },
+    "bilinst": {
+      "position": "Freelance Développeur Web",
+      "duration": "2022 - 2023"
+    }
+  },
+  "education": {
+    "title": "Mon Éducation",
+    "description": "Je suis en train de terminer ma licence en informatique à l'université de Brême, en Allemagne.",
+    "uniBremen": {
+      "degree": "Licence en Informatique"
+    },
+    "ime": {
+      "degree": "Ingénieurie en Informatique - Non achevé"
+    },
+    "fcc01": {
+      "degree": "Certification en Responsive Web Design"
+    },
+    "fcc02": {
+      "degree": "Certification en Algorithmes et Structures de Données JavaScript"
+    }
+  },
+  "skills": {
+    "title": "Mes Compétences",
+    "description": "Je suis compétent dans divers langages de programmation et technologies. Voici quelques-unes que j'ai utilisées récemment"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "description": "Je suis un passionné du développement logiciel, ayant travaillé sur divers projets et technologies et toujours à la recherche de nouvelles opportunités.",
+    "name": "Nom",
+    "nameVal": "Steve Kazock",
+    "phone": "Tel.",
+    "phoneVal": "(+49) 176 732 563 73",
+    "experience": "Expérience",
+    "years": "2+ Ans",
+    "linkedin": "LinkedIn",
+    "linkedinVal": "steve-kazock",
+    "nationality": "Nationalité",
+    "nationalityVal": "Camerounais",
+    "email": "Email",
+    "emailVal": "kazockparfait02@gmail.com",
+    "address": "Adresse",
+    "addressVal": "Brême, Allemagne",
+    "languages": "Langues",
+    "languagesVal": "Français, Anglais, Allemand"
+  },
+  "projects": {
+    "project1": "Horizon est une application bancaire moderne avec un tableau de bord de gestion financière qui connecte plusieurs comptes bancaires, affiche les transactions en temps réel et permet de transférer de l'argent à d'autres utilisateurs sur la plateforme.",
+    "project2": "Application Clone de YouTube. Ce projet est un clone du site YouTube avec un design moderne et des fonctionnalités comme la lecture de vidéos utilisant les API YouTube.",
+    "project3": "KD School est un site éducatif multipage qui fournit des informations sur l'école, les cours, les enseignants et les informations de contact.",
+    "project4": "Xpertacademy est une plateforme d'apprentissage en ligne moderne qui propose une large gamme de cours dans divers domaines. La plateforme permet aux utilisateurs de s'inscrire à des cours, de passer des quiz et d'obtenir des certificats à la fin."
+  },
+  "contact": {
+    "title": "Commençons!!",
+    "description": "Vous avez un projet en tête ou vous voulez simplement dire bonjour ? N'hésitez pas à me contacter en utilisant le formulaire ci-dessous.",
+    "firstname": "Prénom",
+    "lastname": "Nom",
+    "email": "Email",
+    "phone": "Num. de téléphone",
+    "selectSvc": "Sélectionnez un service",
+    "frontend": "Développement Frontend",
+    "backend": "Développement Backend",
+    "wordpress": "Développement WordPress",
+    "seo": "SEO & Analytics",
+    "other": "Autre",
+    "message": "Tapez votre message ici.",
+    "submit": "Envoyer"
+  }
+}

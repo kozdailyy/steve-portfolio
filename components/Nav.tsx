@@ -1,22 +1,26 @@
 "use client";
+
+import { useTranslations } from "next-intl";
+
 import { navLinks } from "@/constants";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Link } from "@/i18n/routing";
 
 const Nav = () => {
+  const t = useTranslations("nav");
   const pathname = usePathname();
   return (
     <nav className="flex gap-8">
-      {navLinks.map((link) => {
+      {navLinks.map(({ nameKey, path }) => {
         return (
           <Link
-            href={link.path}
-            key={link.name}
+            href={path}
+            key={nameKey}
             className={`${
-              link.path === pathname && "text-accent border-b-2 border-accent"
+              path === pathname && "text-accent border-b-2 border-accent"
             } capitalize font-medium hover:text-accent transition-all`}
           >
-            {link.name}
+            {t(nameKey)}
           </Link>
         );
       })}

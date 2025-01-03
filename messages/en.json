@@ -1,0 +1,127 @@
+{
+  "Home": {
+    "role": "Software Developer",
+    "hello": "Hello, I'm",
+    "description": "I excel at building web applications and websites and I'm proficient in various programming languages and technologies.",
+    "cv": "Download CV"
+  },
+  "stats": {
+    "yearsOfExperience": "Years of experience",
+    "projectsCompleted": "Projects completed",
+    "technologiesMastered": "Technologies mastered",
+    "codeCommits": "Code commits"
+  },
+  "services": {
+    "frontend": {
+      "title": "Frontend Development",
+      "description": "I can build a beautiful and scalable SPA using React.js, Next.js, and other modern frameworks."
+    },
+    "backend": {
+      "title": "Backend Development",
+      "description": "I can develop robust backend applications using Java, Node.js and other popular technologies."
+    },
+    "wordpress": {
+      "title": "WordPress Development",
+      "description": "I can create custom WordPress websites to help you develop a strong online presence."
+    },
+    "seo": {
+      "title": "SEO & Analytics",
+      "description": "Rank higher on popular search engines like Google through SEO and analyze using Google Analytics."
+    }
+  },
+  "nav": {
+    "home": "home",
+    "services": "services",
+    "resume": "resume",
+    "work": "work",
+    "contact": "contact"
+  },
+  "resume": {
+    "experience": "Experience",
+    "education": "Education",
+    "skills": "Skills",
+    "about": "About Me"
+  },
+  "experience": {
+    "title": "My Experience",
+    "description": "I have worked with both small and large teams on various projects with various technologies. Always looking for opportunities to learn and grow.",
+    "cewe": {
+      "position": "Java Developer Working Student",
+      "duration": "2024 - Present"
+    },
+    "ipw": {
+      "position": "Full Stack Developer",
+      "duration": "2023 - 2024"
+    },
+    "camc": {
+      "position": "Full Stack Developer Intern",
+      "duration": "Summer 2022"
+    },
+    "bilinst": {
+      "position": "Freelance Web Developer",
+      "duration": "2022 - 2023"
+    }
+  },
+  "education": {
+    "title": "My Education",
+    "description": "I'm completing my Bachelor's degree in Computer Science and Engineering from the University of Bremen, Germany.",
+    "uniBremen": {
+      "degree": "Bachelor of Science"
+    },
+    "ime": {
+      "degree": "Engineering Diploma in Computer Science - Not Completed"
+    },
+    "fcc01": {
+      "degree": "Certification in Responsive Web Design"
+    },
+    "fcc02": {
+      "degree": "Certification in JavaScript Algorithms and Data Structures"
+    }
+  },
+  "skills": {
+    "title": "My Skills",
+    "description": "I have experience working with a range of programming languages and technologies. Here are a few of the technologies I've worked with recently:"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I am a Junior full stack developer specializing in frontend and backend development. I have more than 02 years of experience in building web applications.",
+    "name": "Name",
+    "nameVal": "Steve Kazock",
+    "phone": "Phone",
+    "phoneVal": "(+49) 176 732 563 73",
+    "experience": "Experience",
+    "years": "2+ years",
+    "linkedin": "LinkedIn",
+    "linkedinVal": "steve-kazock",
+    "nationality": "Nationality",
+    "nationalityVal": "Cameroonian",
+    "email": "Email",
+    "emailVal": "kazockparfait02@gmail.com",
+    "address": "Address",
+    "addressVal": "Bremen, Germany",
+    "languages": "Languages",
+    "languagesVal": "English, French, German"
+  },
+  "projects": {
+    "project1": "Horizon is a modern a banking app with a finance management dashboard that connects multiple bank accounts, displays real-time transactions, and allows you to transfer money to other users on the platform.",
+    "project2": "Modern YouTube Clone Application. This project is a clone of the YouTube website with a modern design and features like video playback",
+    "project3": "KD School is a multipage educational frontend website that provides information about the school, courses, teachers, and contact information.",
+    "project4": "Xpertacademy is a modern e-learning platform that offers a wide range of courses in various fields. The platform allows users to enroll in courses, take quizzes, and earn certificates upon completion."
+  },
+  "contact": {
+    "title": "Let's Work together",
+    "description": "You have a project in mind or just want to say hi? Don't hesitate to reach out using the form below.",
+    "firstname": "Firstname",
+    "lastname": "Lastname",
+    "email": "Email",
+    "phone": "Phone number",
+    "selectSvc": "Select a service",
+    "frontend": "Frontend Development",
+    "backend": "Backend Development",
+    "wordpress": "WordPress Development",
+    "seo": "SEO & Analytics",
+    "other": "Other",
+    "message": "Type your message here.",
+    "submit": "Send message"
+  }
+}

@@ -1,5 +1,7 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -21,6 +23,7 @@ import Image from "next/image";
 import WorkSliderBtns from "@/components/WorkSliderBtns";
 
 const Work = () => {
+  const t = useTranslations("projects");
   const [project, setProject] = useState(projects[0]);
 
   const handleSlideChange = (swiper: SwiperType) => {
@@ -45,9 +48,9 @@ const Work = () => {
                 {project.num}
               </div>
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {`${project.category} project`}
+                {`${project.category} ${t("project")}`}
               </h2>
-              <p className="text-white/60">{project.description}</p>
+              <p className="text-white/60">{t(project.description)}</p>
               <ul className="flex gap-4">
                 {project.stack.map((item, index) => (
                   <li key={index} className="text-xl text-accent">
@@ -70,18 +73,20 @@ const Work = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
-                <Link href={project.github}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] flex items-center justify-center bg-white/5 group rounded-full mt-4">
-                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Github repository</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                {project.num !== "04" && (
+                  <Link href={project.github}>
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] flex items-center justify-center bg-white/5 group rounded-full mt-4">
+                          <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Github repository</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
               </div>
             </div>
           </div>
@@ -101,7 +106,8 @@ const Work = () => {
                     <div className="relative w-full h-full">
                       <Image
                         src={item.image}
-                        fill
+                        layout="fill"
+                        objectFit="cover"
                         className="object-cover"
                         alt=""
                       />

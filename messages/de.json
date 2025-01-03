@@ -1,0 +1,128 @@
+{
+  "Home": {
+    "role": "Softwareentwickler",
+    "hello": "Hi, ich bin",
+    "description": "Ich bin hervorragend darin, Webanwendungen und Websites zu erstellen und beherrsche verschiedene Programmiersprachen und Technologien.",
+    "cv": "Lebenslauf herunterladen"
+  },
+  "stats": {
+    "yearsOfExperience": "Jahre Erfahrung",
+    "projectsCompleted": "Abgeschlossene Projekte",
+    "technologiesMastered": "Beherrschte Technologien",
+    "codeCommits": "Code-Commits"
+  },
+  "services": {
+    "frontend": {
+      "title": "Frontend-Entwicklung",
+      "description": "Ich kann eine schöne und skalierbare SPA mit React.js, Next.js und anderen modernen Frameworks erstellen."
+    },
+    "backend": {
+      "title": "Backend-Entwicklung",
+      "description": "Ich kann robuste Backend-Anwendungen mit Java, Node.js und anderen beliebten Technologien entwickeln."
+    },
+    "wordpress": {
+      "title": "WordPress-Entwicklung",
+      "description": "Ich kann benutzerdefinierte WordPress-Websites erstellen, um Ihnen bei der Entwicklung einer starken Online-Präsenz zu helfen."
+    },
+    "seo": {
+      "title": "SEO & Analytik",
+      "description": "Erzielen Sie eine bessere Platzierung in beliebten Suchmaschinen wie Google durch SEO und analysieren Sie mit Google Analytics."
+    }
+  },
+  "nav": {
+    "home": "startseite",
+    "services": "dienstleistungen",
+    "resume": "lebenslauf",
+    "work": "arbeit",
+    "contact": "kontakt"
+  },
+  "resume": {
+    "experience": "Erfahrung",
+    "education": "Ausbildung",
+    "skills": "Fähigkeiten",
+    "about": "Über mich"
+  },
+  "experience": {
+    "title": "Meine Erfahrung",
+    "description": "Ich habe mit kleinen und großen Teams an verschiedenen Projekten mit verschiedenen Technologien gearbeitet. Ich bin immer auf der Suche nach Möglichkeiten, zu lernen und zu wachsen.",
+    "cewe": {
+      "position": "Java-Entwickler Werkstudent",
+      "duration": "2024 - Heute"
+    },
+    "ipw": {
+      "position": "Full Stack Entwickler",
+      "duration": "2023 - 2024"
+    },
+    "camc": {
+      "position": "Full Stack Entwickler Praktikant",
+      "duration": "Sommer 2022"
+    },
+    "bilinst": {
+      "position": "Freelance Webentwickler",
+      "duration": "2022 - 2023"
+    }
+  },
+  "education": {
+    "title": "Meine Ausbildung",
+    "description": "Ich bin aktuell Student an der Universität Bremen in Studiengang Informatik.",
+    "uniBremen": {
+      "degree": "Bachelor in Informatik"
+    },
+    "ime": {
+      "degree": "Diplom in Informatik - Nicht abgeschlossen"
+    },
+    "fcc01": {
+      "degree": "Zertifizierung in Responsive Web Design"
+    },
+    "fcc02": {
+      "degree": "Zertifizierung in JavaScript Algorithmus und Datenstrukturen"
+    }
+  },
+  "skills": {
+    "title": "Meine Fähigkeiten",
+    "description": "Ich habe Erfahrung in verschiedenen Programmiersprachen und Technologien. Hier sind einige davon:"
+  },
+  "about": {
+    "title": "Über mich",
+    "description": "Ich bin ein leidenschaftlicher Softwareentwickler, der gerne neue Technologien lernt und sie in Projekten anwendet. Ich habe Erfahrung in der Arbeit mit kleinen und großen Teams und bin immer auf der Suche nach Möglichkeiten, zu lernen und zu wachsen.",
+    "name": "Name",
+    "nameVal": "Steve Kazock",
+    "phone": "Tel.",
+    "phoneVal": "(+49) 176 732 563 73",
+    "experience": "Erfahrung",
+    "years": "2+ Jahre",
+    "linkedin": "LinkedIn",
+    "linkedinVal": "steve-kazock",
+    "nationality": "Nationalität",
+    "nationalityVal": "Kameruner",
+    "email": "Email",
+    "emailVal": "kazockparfait02@gmail.com",
+    "address": "Anschrift",
+    "addressVal": "Bremen, Deutschland",
+    "languages": "Sprachen",
+    "languagesVal": "Deutsch, Englisch, Französisch"
+  },
+  "projects": {
+    "project": "Projekt",
+    "project1": "Horizon ist eine moderne Banking-Anwendung mit einem Finanzmanagement-Dashboard, das mehrere Bankkonten verbindet, Transaktionen in Echtzeit anzeigt und Geldüberweisungen an andere Benutzer auf der Plattform ermöglicht.",
+    "project2": "YouTube-Clone-Anwendung. Dieses Projekt ist ein Klon der YouTube-Website mit modernem Design und Funktionen wie der Videowiedergabe unter Verwendung der YouTube-APIs.",
+    "project3": "KD School ist eine mehrseitige Bildungswebsite, die Informationen über die Schule, die Kurse, die Lehrer und die Kontaktinformationen bereitstellt.",
+    "project4": "Xpertacademy ist eine moderne Online-Lernplattform, die eine breite Palette von Kursen in verschiedenen Bereichen anbietet. Die Plattform ermöglicht es den Benutzern, sich für Kurse anzumelden, Quiz zu absolvieren und am Ende Zertifikate zu erhalten."
+  },
+  "contact": {
+    "title": "Lass uns zusammenarbeiten",
+    "description": "Haben Sie ein Projekt im Sinn oder möchten Sie einfach nur Hallo sagen? Zögern Sie nicht, das untenstehende Formular zu verwenden.",
+    "firstname": "Vorname",
+    "lastname": "Nachname",
+    "email": "Email",
+    "phone": "Telefonnummer",
+    "selectSvc": "Dienstleistung auswählen",
+    "frontend": "Frontend-Entwicklung",
+    "backend": "Backend-Entwicklung",
+    "wordpress": "WordPress-Entwicklung",
+    "seo": "SEO & Analytik",
+    "other": "Andere",
+    "message": "Geben Sie hier Ihre Nachricht ein.",
+    "submit": "Senden"
+  }
+}
