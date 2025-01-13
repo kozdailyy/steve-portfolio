@@ -3,8 +3,9 @@ import { useTranslations } from "next-intl";
 import Photo from "@/components/Photo";
 import Socials from "@/components/Socials";
 import Stats from "@/components/Stats";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
+import Link from "next/link";
 
 const Home = () => {
   const t = useTranslations("Home");
@@ -23,14 +24,26 @@ const Home = () => {
             </p>
 
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
+              <Link
+                className={`${buttonVariants({
+                  variant: "outline",
+                  size: "lg",
+                })} uppercase flex items-center gap-2`}
+                href="/my-cv.pdf"
+                download
+              >
+                <span>{t("cv")}</span>
+                <FiDownload className="text-xl" />
+              </Link>
+
+              {/* <Button
                 variant="outline"
                 size="lg"
                 className="uppercase flex items-center gap-2"
               >
                 <span>{t("cv")}</span>
                 <FiDownload className="text-xl" />
-              </Button>
+              </Button> */}
               <div className="mb-8 xl:mb-0">
                 <Socials
                   containerStyles="flex gap-6"

@@ -9,6 +9,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
+import { Toaster } from "@/components/ui/toaster";
 
 const jetBrainsMono = JetBrains_Mono({
   variable: "--font-jetBrainsMono",
@@ -47,6 +48,7 @@ export default async function LocaleLayout({
           <Header />
           <StairTransition />
           <PageTransition>{children}</PageTransition>
+          <Toaster />
         </NextIntlClientProvider>
       </body>
     </html>

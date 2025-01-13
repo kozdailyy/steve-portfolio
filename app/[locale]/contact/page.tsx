@@ -16,9 +16,52 @@ import {
 import { Textarea } from "@/components/ui/textarea";
 import { info } from "@/constants";
 import { motion } from "framer-motion";
+import { toast } from "@/hooks/use-toast";
+import { ToastAction } from "@/components/ui/toast";
 
 const Contact = () => {
   const t = useTranslations("contact");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    // const formData = new FormData(e.target);
+    // formData.append(
+    //   "access_key",
+    //   "process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY"
+    // );
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY,
+        firstname: e.target.firstname.value,
+        lastname: e.target.lastname.value,
+        email: e.target.email.value,
+        phone: e.target.phone.value,
+        service: e.target.service.value,
+        msg: e.target.msg.value,
+      }),
+    });
+    const result = await response.json();
+    if (result.success) {
+      toast({
+        description: "Your message has been sent successfully!",
+      });
+      e.target.reset();
+    } else {
+      toast({
+        variant: "destructive",
+        title: "Uh oh! Something went wrong.",
+        description:
+          "There was a problem with your request. Failed to send message!",
+        action: <ToastAction altText="Try again">Try again</ToastAction>,
+      });
+    }
+  };
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -32,18 +75,29 @@ const Contact = () => {
         <div className="flex flex-col xl:flex-row gap-[30px]">
           {/* form */}
           <div className="xl:w-[54%] order-2 xl:order-none">
-            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
+            <form
+              onSubmit={handleSubmit}
+              className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
+            >
               <h3 className="text-4xl text-accent">{t("title")}</h3>
               <p className="text-white/60">{t("description")}</p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder={t("firstname")} />
-                <Input type="lastname" placeholder={t("lastname")} />
-                <Input type="email" placeholder={t("email")} />
-                <Input type="phone" placeholder={t("phone")} />
+                <Input
+                  type="firstname"
+                  name="firstname"
+                  placeholder={t("firstname")}
+                />
+                <Input
+                  type="lastname"
+                  name="lastname"
+                  placeholder={t("lastname")}
+                />
+                <Input type="email" name="email" placeholder={t("email")} />
+                <Input type="phone" name="phone" placeholder={t("phone")} />
               </div>
               {/* select */}
-              <Select>
+              <Select name="service">
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder={t("selectSvc")} />
                 </SelectTrigger>
@@ -58,7 +112,11 @@ const Contact = () => {
                 </SelectContent>
               </Select>
               {/* textarea */}
-              <Textarea className="h-[200px]" placeholder={t("message")} />
+              <Textarea
+                name="msg"
+                className="h-[200px]"
+                placeholder={t("message")}
+              />
               {/* button */}
               <Button size="md" className="max-w-40">
                 {t("submit")}
