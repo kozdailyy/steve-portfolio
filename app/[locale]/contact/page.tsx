@@ -18,11 +18,12 @@ import { info } from "@/constants";
 import { motion } from "framer-motion";
 import { toast } from "@/hooks/use-toast";
 import { ToastAction } from "@/components/ui/toast";
+import React from "react";
 
 const Contact = () => {
   const t = useTranslations("contact");
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // const formData = new FormData(e.target);
     // formData.append(
@@ -37,12 +38,12 @@ const Contact = () => {
       },
       body: JSON.stringify({
         access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY,
-        firstname: e.target.firstname.value,
-        lastname: e.target.lastname.value,
-        email: e.target.email.value,
-        phone: e.target.phone.value,
-        service: e.target.service.value,
-        msg: e.target.msg.value,
+        firstname: e.currentTarget.firstname.value,
+        lastname: e.currentTarget.lastname.value,
+        email: e.currentTarget.email.value,
+        phone: e.currentTarget.phone.value,
+        service: e.currentTarget.service.value,
+        msg: e.currentTarget.msg.value,
       }),
     });
     const result = await response.json();
@@ -50,7 +51,6 @@ const Contact = () => {
       toast({
         description: "Your message has been sent successfully!",
       });
-      e.target.reset();
     } else {
       toast({
         variant: "destructive",
