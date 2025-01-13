@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 import Photo from "@/components/Photo";
 import Socials from "@/components/Socials";
 import Stats from "@/components/Stats";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 import Link from "next/link";
 
