@@ -235,7 +235,7 @@ export const projects = [
       { name: "TypeScript" },
       { name: "Appwrite" },
     ],
-    image: "/assets/work/dashboard.png",
+    image: "/assets/work/thumb1.png",
     live: "https://banking-app-three-xi.vercel.app/",
     github: "https://github.com/kozdailyy/banking-app",
   },
